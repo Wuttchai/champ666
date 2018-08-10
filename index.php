@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
-    <link href="css/landing-page.min.css" rel="stylesheet">
+    <link href="css/landing-page.css" rel="stylesheet">
 
   </head>
 
@@ -70,11 +70,15 @@
                     do {
                       $numdown = rand(0,9);
                     } while ($numdown == $numon);
-                    echo $numon.$numdown;
+
                     $numdown = $numdown;
                   }
                   ?>
-                  <h5 class="mb-5 text-dark"><?php echo $numon; ?></h5>
+                          <div class="col-md-12 block">
+                              <div class="circle">
+                                  <p><?php echo $numon; ?></p>
+                              </div>
+                          </div>                      
                   <?php
                   $numold = [];
                   $numold2 = [];
@@ -112,7 +116,16 @@
                   <h4 class="mb-5 text-dark">วิ่งล่าง</h4>
                   <?php
                   ?>
-                  <h5 class="mb-5 text-dark"><?php echo $numdown; ?></h5>
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-md-12 block">
+                              <div class="circle">
+                                  <p><?php echo $numdown; ?></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
                   <?php
                   $numold = [];
                   $numold2 = [];
@@ -155,7 +168,15 @@
         </div>
       </div>
     </header>
-
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 block">
+                <div class="circle">
+                    <p>Some Text here Some text here</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Footer -->
