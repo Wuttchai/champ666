@@ -39,7 +39,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-9 mx-auto">
-            <h3 class="mb-5 text-dark">ม้าสีหมอก</h3>
+            <h3 class="mb-5 " style="color:black;">ม้าสีหมอก</h3>
 
           </div>
           <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
@@ -62,7 +62,7 @@
                   <h5 class="mb-5 text-danger text-left">ประจำวันที่ : <?php  echo DateThai($strDate); ?></h5>
                 </div>
                 <div class="col-12 col-md-12 ">
-                  <h4 class="mb-5 text-dark">วิ่งบน</h4>
+                  <h4 class="mb-5" style="color:black;">วิ่งบน</h4>
                   <?php
                   $numon = rand(0,9);
                   $numdown = rand(0,9);
@@ -76,9 +76,9 @@
                   ?>
                           <div class="col-md-12 block">
                               <div class="circle">
-                                  <p><?php echo $numon; ?></p>
+                                  <p ><?php echo $numon; ?></p>
                               </div>
-                          </div>                      
+                          </div>
                   <?php
                   $numold = [];
                   $numold2 = [];
@@ -107,13 +107,14 @@
                   }
 
                    ?>
-                   &nbsp;<h class="mb-5 text-dark text-center"><?php echo $numrand; ?> </h>
+                   &nbsp;<h class="mb-5  text-center" style="color:black;"><?php echo $numrand; ?> </h>
                    <?php $numold[$i] = $numrand; } ?>
+                   <hr > </hr>
                 </div>
 
                 <div class="col-12 col-md-12 ">
                   <br>
-                  <h4 class="mb-5 text-dark">วิ่งล่าง</h4>
+                  <h4 class="mb-5" style="color:black;">วิ่งล่าง</h4>
                   <?php
                   ?>
                   <div class="container">
@@ -153,8 +154,9 @@
                     }
 
                    ?>
-                   &nbsp;<h class="mb-5 text-dark text-center"><?php echo $numrand; ?> </h>
+                   &nbsp;<h class="mb-5 text-center" style="color:black;"><?php echo $numrand; ?> </h>
                    <?php $numold2[$i] = $numrand; } ?>
+                   <hr> </hr>
                 </div>
                 <div class="col-5 col-md-4">
                   </div>
@@ -168,15 +170,7 @@
         </div>
       </div>
     </header>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 block">
-                <div class="circle">
-                    <p>Some Text here Some text here</p>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
 
     <!-- Footer -->

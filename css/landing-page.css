@@ -144,13 +144,20 @@ footer.footer {
     display: table-cell;
 }
 .circle2 {
-    border: 5px solid red;
-    background: yellow;
-    
+
+
     color: black;
     height: 100px;
     font-weight: bold;
     width: 100px;
     display: table;
     margin: 20px auto;
+}
+.circle2 p {
+    vertical-align: middle;
+    display: table-cell;
+}
+hr {
+
+    background-color: red;
 }
